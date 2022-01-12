@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.test.CrossBrowser">
+      <class name="org.auto.Hello">
         <methods>
-          <include name="browser"/>
+          <include name="car"/>
         </methods>
-      </class> <!-- org.test.CrossBrowser -->
+      </class> <!-- org.auto.Hello -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

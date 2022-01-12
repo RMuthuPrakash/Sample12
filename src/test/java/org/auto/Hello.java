@@ -10,7 +10,10 @@ public class Hello {
 	public void car() {
 		System.out.println("Creta");
 		Assert.assertTrue(false);
-
+	}
+	@Test
+	public void ebike() {
+		System.out.println("Ola ebike performance");
 	}
 
 }

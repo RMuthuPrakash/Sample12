@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 18 13:58:44 IST 2021</td>
+<td>Started on:</td><td>Wed Jan 12 08:27:29 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (97 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (160 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.test.CrossBrowser.browser()'><b>browser</b><br>Test class: org.test.CrossBrowser</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method browser but has not been marked @Optional or defined
-in C:\Users\Muthu Prakash\AppData\Local\Temp\testng-eclipse-1150142296\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:290)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+<td title='org.auto.Hello.car()'><b>car</b><br>Test class: org.auto.Hello</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at org.auto.Hello.car(Hello.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -103,17 +107,21 @@ in C:\Users\Muthu Prakash\AppData\Local\Temp\testng-eclipse-1150142296\testng-cu
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace343965883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace343965883'><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method browser but has not been marked @Optional or defined
-in C:\Users\Muthu Prakash\AppData\Local\Temp\testng-eclipse-1150142296\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:290)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+</pre></div><a href='#' onClick='toggleBox("stack-trace143110009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace143110009'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at org.auto.Hello.car(Hello.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -133,7 +141,25 @@ in C:\Users\Muthu Prakash\AppData\Local\Temp\testng-eclipse-1150142296\testng-cu
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>org.test.CrossBrowser@28d25987</td></tr>
+<td>org.auto.Hello@18be83e4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.auto.Hello.bike()'><b>bike</b><br>Test class: org.auto.Hello</td>
+<td></td>
+<td>0</td>
+<td>org.auto.Hello@18be83e4</td></tr>
+<tr>
+<td title='org.auto.Hello.ebike()'><b>ebike</b><br>Test class: org.auto.Hello</td>
+<td></td>
+<td>0</td>
+<td>org.auto.Hello@18be83e4</td></tr>
 </table><p>
 </body>
 </html>
