@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="4" name="Test1(failed)" parallel="tests">
+    <parameter name="passWord" value="Greens@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userName" value="Greens"/>
+    <classes>
+      <class name="org.test.Cross">
+        <methods>
+          <include name="browser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.Cross -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="4" name="Test3(failed)" parallel="tests">
+    <parameter name="passWord" value="Prakash@123"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="userName" value="Prakash"/>
+    <classes>
+      <class name="org.test.Cross">
+        <methods>
+          <include name="browser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.Cross -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="4" name="Test2(failed)" parallel="tests">
+    <parameter name="passWord" value="Muthu@123"/>
+    <parameter name="browser" value="ff"/>
+    <parameter name="userName" value="Muthu"/>
+    <classes>
+      <class name="org.test.Cross">
+        <methods>
+          <include name="browser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.Cross -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
