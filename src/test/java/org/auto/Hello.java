@@ -15,5 +15,9 @@ public class Hello {
 	public void ebike() {
 		System.out.println("Ola ebike performance");
 	}
+	@Test
+	public void ebike1() {
+		System.out.println("ether ebike");
+	}
 
 }
